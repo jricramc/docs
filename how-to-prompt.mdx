@@ -1,0 +1,206 @@
+---
+title: "How to Prompt Nerd"
+description: "Get the best results from your AI software builder"
+---
+
+## The golden rule
+
+**Be concise and specific.** Tell Nerd exactly what you need in as few words as possible, while including all the important details.
+
+<Warning>
+  **Never** take your prompt to ChatGPT and ask it to "make it better." This usually makes prompts worse by adding unnecessary fluff. Your direct, clear description is what Nerd needs.
+</Warning>
+
+## Good prompts are concise and complete
+
+Less is more, but don't leave out critical details.
+
+<CodeGroup>
+
+```text ✅ Good
+"Create an online store for handmade jewelry with product categories, 
+shopping cart, and Stripe payment integration"
+```
+
+```text ❌ Too vague
+"Build me a store"
+```
+
+```text ❌ Too wordy
+"I would like to request the development of a comprehensive e-commerce 
+solution that encompasses various features and functionalities for the 
+purpose of selling handmade jewelry items..."
+```
+
+</CodeGroup>
+
+## What to include in your prompt
+
+<AccordionGroup>
+  <Accordion title="1. What you're building" icon="bullseye">
+    Start with the core purpose in one sentence.
+    
+    Examples:
+    - "A CRM for managing real estate clients"
+    - "An inventory management system for a warehouse"
+    - "A booking platform for fitness classes"
+  </Accordion>
+  
+  <Accordion title="2. Key features" icon="list-check">
+    List the must-have features clearly and directly.
+    
+    Example:
+    "Include user authentication, appointment scheduling, payment processing, and email notifications"
+  </Accordion>
+  
+  <Accordion title="3. Important constraints" icon="shield">
+    Mention any specific requirements or limitations.
+    
+    Examples:
+    - "Must work on mobile"
+    - "Should support multiple languages"
+    - "Needs to handle 1000+ products"
+  </Accordion>
+  
+  <Accordion title="4. User roles (if applicable)" icon="users">
+    Specify who will use the platform and what they can do.
+    
+    Example:
+    "Two user types: customers who can browse and order, and admins who can manage inventory and view reports"
+  </Accordion>
+</AccordionGroup>
+
+## Prompt templates
+
+Use these templates as starting points:
+
+### For e-commerce platforms
+
+```text
+"Create a [product type] store with [features]. 
+Include [specific requirements]."
+
+Example:
+"Create a clothing store with size filters, wishlist, and customer reviews. 
+Must work on mobile and support guest checkout."
+```
+
+### For business tools
+
+```text
+"Build a [tool type] for [user type] that lets them [main actions]. 
+Include [key features]."
+
+Example:
+"Build a project management tool for small teams that lets them 
+create tasks, track time, and generate reports. Include calendar view."
+```
+
+### For custom platforms
+
+```text
+"I need a platform where [users] can [primary function]. 
+It should have [features] and support [requirements]."
+
+Example:
+"I need a platform where tutors can offer online lessons. 
+It should have scheduling, messaging, and payment processing."
+```
+
+## Common mistakes to avoid
+
+<CardGroup cols={2}>
+  <Card title="Don't overthink it" icon="brain">
+    Your first instinct is usually right. Write what you need and submit it.
+  </Card>
+  
+  <Card title="Don't use ChatGPT" icon="ban">
+    AI-generated prompts add fluff that confuses Nerd. Use your own words.
+  </Card>
+  
+  <Card title="Don't write essays" icon="file-lines">
+    Long paragraphs hide important details. Be direct and structured.
+  </Card>
+  
+  <Card title="Don't assume Nerd knows" icon="question">
+    If something is important to you, mention it explicitly.
+  </Card>
+</CardGroup>
+
+## Examples of great prompts
+
+<AccordionGroup>
+  <Accordion title="Online marketplace" icon="store">
+    ```
+    "Create a marketplace for local services. Service providers can 
+    create profiles and list their offerings. Customers can search by 
+    location, book services, and leave reviews. Platform takes 15% 
+    commission on bookings."
+    ```
+    
+    **Why it's good:** Concise, covers all key features, includes business model details.
+  </Accordion>
+  
+  <Accordion title="Internal tool" icon="screwdriver-wrench">
+    ```
+    "Build an employee directory with departments, contact info, and 
+    org chart. Add a search function and let admins update employee data. 
+    Export to CSV needed."
+    ```
+    
+    **Why it's good:** Clear purpose, specific features, includes a technical requirement.
+  </Accordion>
+  
+  <Accordion title="Content platform" icon="newspaper">
+    ```
+    "Create a blog platform where writers can publish articles with 
+    rich text formatting. Include categories, tags, comments, and an 
+    admin dashboard for moderation. Readers can follow writers."
+    ```
+    
+    **Why it's good:** Explains user roles, lists features clearly, describes interactions.
+  </Accordion>
+</AccordionGroup>
+
+## Refining your platform
+
+If Nerd's first attempt isn't quite right, tell it what to change:
+
+<CodeGroup>
+
+```text Adjusting features
+"Add a dark mode toggle to the settings page"
+```
+
+```text Changing layout
+"Move the navigation to the left sidebar instead of the top"
+```
+
+```text Fixing issues
+"The mobile menu isn't closing when I select an item"
+```
+
+```text Adding details
+"In the product page, show related items at the bottom"
+```
+
+</CodeGroup>
+
+<Tip>
+  **Remember:** You're having a conversation with Nerd. Start with your core idea, see what it builds, then refine from there.
+</Tip>
+
+## Payment integration
+
+Nerd uses **Stripe** for payment processing. You don't need to mention Stripe explicitly in your prompts - just say "payment processing" or "checkout" and Nerd will handle the integration automatically.
+
+## Quick checklist
+
+Before submitting your prompt, ask yourself:
+
+- [ ] Can I read this in under 30 seconds?
+- [ ] Have I mentioned all the features that matter to me?
+- [ ] Is it written in my own words (not AI-generated)?
+- [ ] Would someone unfamiliar with my idea understand it?
+
+If you answered yes to all four, you're ready to build!

@@ -1,0 +1,206 @@
+---
+title: "Cómo darle Prompts a Nerd"
+description: "Obtén los mejores resultados de tu constructor de software IA"
+---
+
+## La regla de oro
+
+**Sé conciso y específico.** Dile a Nerd exactamente lo que necesitas en las menos palabras posibles, mientras incluyes todos los detalles importantes.
+
+<Warning>
+  **Nunca** lleves tu prompt a ChatGPT y le pidas que lo "mejore." Esto usualmente empeora los prompts al agregar palabrería innecesaria. Tu descripción directa y clara es lo que Nerd necesita.
+</Warning>
+
+## Los buenos prompts son concisos y completos
+
+Menos es más, pero no dejes fuera detalles críticos.
+
+<CodeGroup>
+
+```text ✅ Bueno
+"Crea una tienda en línea para joyería artesanal con categorías de productos, 
+carrito de compras e integración de pagos con Stripe"
+```
+
+```text ❌ Muy vago
+"Constrúyeme una tienda"
+```
+
+```text ❌ Muy extenso
+"Me gustaría solicitar el desarrollo de una solución integral de comercio 
+electrónico que abarque varias características y funcionalidades con el 
+propósito de vender artículos de joyería artesanal..."
+```
+
+</CodeGroup>
+
+## Qué incluir en tu prompt
+
+<AccordionGroup>
+  <Accordion title="1. Qué estás construyendo" icon="bullseye">
+    Comienza con el propósito principal en una oración.
+    
+    Ejemplos:
+    - "Un CRM para gestionar clientes de bienes raíces"
+    - "Un sistema de gestión de inventario para un almacén"
+    - "Una plataforma de reservas para clases de fitness"
+  </Accordion>
+  
+  <Accordion title="2. Características clave" icon="list-check">
+    Lista las funcionalidades imprescindibles de manera clara y directa.
+    
+    Ejemplo:
+    "Incluye autenticación de usuarios, programación de citas, procesamiento de pagos y notificaciones por email"
+  </Accordion>
+  
+  <Accordion title="3. Restricciones importantes" icon="shield">
+    Menciona cualquier requisito o limitación específica.
+    
+    Ejemplos:
+    - "Debe funcionar en móvil"
+    - "Debe soportar múltiples idiomas"
+    - "Necesita manejar más de 1000 productos"
+  </Accordion>
+  
+  <Accordion title="4. Roles de usuario (si aplica)" icon="users">
+    Especifica quién usará la plataforma y qué pueden hacer.
+    
+    Ejemplo:
+    "Dos tipos de usuarios: clientes que pueden navegar y ordenar, y administradores que pueden gestionar inventario y ver reportes"
+  </Accordion>
+</AccordionGroup>
+
+## Plantillas de prompts
+
+Usa estas plantillas como punto de partida:
+
+### Para plataformas de e-commerce
+
+```text
+"Crea una tienda de [tipo de producto] con [características]. 
+Incluye [requisitos específicos]."
+
+Ejemplo:
+"Crea una tienda de ropa con filtros de talla, lista de deseos y reseñas de clientes. 
+Debe funcionar en móvil y soportar checkout como invitado."
+```
+
+### Para herramientas de negocio
+
+```text
+"Construye un [tipo de herramienta] para [tipo de usuario] que les permita [acciones principales]. 
+Incluye [características clave]."
+
+Ejemplo:
+"Construye una herramienta de gestión de proyectos para equipos pequeños que les permita 
+crear tareas, rastrear tiempo y generar reportes. Incluye vista de calendario."
+```
+
+### Para plataformas personalizadas
+
+```text
+"Necesito una plataforma donde [usuarios] puedan [función principal]. 
+Debe tener [características] y soportar [requisitos]."
+
+Ejemplo:
+"Necesito una plataforma donde tutores puedan ofrecer lecciones en línea. 
+Debe tener programación, mensajería y procesamiento de pagos."
+```
+
+## Errores comunes a evitar
+
+<CardGroup cols={2}>
+  <Card title="No lo pienses demasiado" icon="brain">
+    Tu primer instinto usualmente es correcto. Escribe lo que necesitas y envíalo.
+  </Card>
+  
+  <Card title="No uses ChatGPT" icon="ban">
+    Los prompts generados por IA agregan palabrería que confunde a Nerd. Usa tus propias palabras.
+  </Card>
+  
+  <Card title="No escribas ensayos" icon="file-lines">
+    Los párrafos largos ocultan detalles importantes. Sé directo y estructurado.
+  </Card>
+  
+  <Card title="No asumas que Nerd sabe" icon="question">
+    Si algo es importante para ti, menciónalo explícitamente.
+  </Card>
+</CardGroup>
+
+## Ejemplos de prompts excelentes
+
+<AccordionGroup>
+  <Accordion title="Marketplace en línea" icon="store">
+    ```
+    "Crea un marketplace para servicios locales. Los proveedores de servicios 
+    pueden crear perfiles y listar sus ofertas. Los clientes pueden buscar por 
+    ubicación, reservar servicios y dejar reseñas. La plataforma toma 15% de 
+    comisión en reservas."
+    ```
+    
+    **Por qué es bueno:** Conciso, cubre todas las características clave, incluye detalles del modelo de negocio.
+  </Accordion>
+  
+  <Accordion title="Herramienta interna" icon="screwdriver-wrench">
+    ```
+    "Construye un directorio de empleados con departamentos, información de 
+    contacto y organigrama. Agrega función de búsqueda y permite que admins 
+    actualicen datos de empleados. Se necesita exportación a CSV."
+    ```
+    
+    **Por qué es bueno:** Propósito claro, características específicas, incluye un requisito técnico.
+  </Accordion>
+  
+  <Accordion title="Plataforma de contenido" icon="newspaper">
+    ```
+    "Crea una plataforma de blog donde escritores puedan publicar artículos con 
+    formato de texto enriquecido. Incluye categorías, etiquetas, comentarios y un 
+    panel de administración para moderación. Los lectores pueden seguir escritores."
+    ```
+    
+    **Por qué es bueno:** Explica roles de usuario, lista características claramente, describe interacciones.
+  </Accordion>
+</AccordionGroup>
+
+## Refinando tu plataforma
+
+Si el primer intento de Nerd no es exactamente lo que quieres, dile qué cambiar:
+
+<CodeGroup>
+
+```text Ajustando características
+"Agrega un toggle de modo oscuro a la página de configuración"
+```
+
+```text Cambiando diseño
+"Mueve la navegación a la barra lateral izquierda en lugar de arriba"
+```
+
+```text Arreglando problemas
+"El menú móvil no se cierra cuando selecciono un elemento"
+```
+
+```text Agregando detalles
+"En la página de producto, muestra artículos relacionados abajo"
+```
+
+</CodeGroup>
+
+<Tip>
+  **Recuerda:** Estás teniendo una conversación con Nerd. Comienza con tu idea principal, ve qué construye, y luego refina desde ahí.
+</Tip>
+
+## Integración de pagos
+
+Nerd usa **Stripe** para el procesamiento de pagos. No necesitas mencionar Stripe explícitamente en tus prompts - solo di "procesamiento de pagos" o "checkout" y Nerd manejará la integración automáticamente.
+
+## Lista de verificación rápida
+
+Antes de enviar tu prompt, pregúntate:
+
+- [ ] ¿Puedo leer esto en menos de 30 segundos?
+- [ ] ¿He mencionado todas las características que me importan?
+- [ ] ¿Está escrito en mis propias palabras (no generado por IA)?
+- [ ] ¿Alguien no familiarizado con mi idea lo entendería?
+
+¡Si respondiste sí a las cuatro, estás listo para construir!
